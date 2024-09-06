@@ -37,3 +37,4 @@ Este projeto configura um pipeline de CI/CD usando GitHub Actions para gerenciar
    terraform init
    terraform plan
    terraform apply -auto-approve
+Atualização de teste para o pipeline
