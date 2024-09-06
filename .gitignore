@@ -1,0 +1,9 @@
+ca-cert.pem
+new-config.yaml
+.terraform/
+*.tfstate
+*.tfstate.backup
+tls.key
+tls.crt
+tls.key.base64
+tls.crt.base64
