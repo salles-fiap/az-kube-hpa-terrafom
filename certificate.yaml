@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: example-certificate
+  namespace: default
+spec:
+  secretName: example-certificate-secret
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: example.com
+  dnsNames:
+  - example.com
