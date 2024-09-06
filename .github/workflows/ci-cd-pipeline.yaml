@@ -32,6 +32,10 @@ jobs:
         with:
           version: '1.25.0'
 
+      - name: Configure kubeconfig
+        run: |
+          echo "${{ secrets.KUBE_CONFIG_DATA }}" > $HOME/.kube/config
+
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f deployment.yaml
